@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+    <link rel="stylesheet" href="widget.css">
+</head>
+<body>
+    <!-- Chat Widget Container -->
+    <div id="chat-widget" class="chat-widget">
+        <!-- Response Time Badge -->
+        <div id="response-badge" class="response-badge">
+            <span class="badge-text">نرد خلال أقل من 15 ثانية</span>
+        </div>
+        
+        <!-- Chat Button -->
+        <div id="chat-button" class="chat-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <h3 id="chat-title">الدعم الفني</h3>
+                <div class="header-controls">
+                    <button id="language-switcher" class="language-switcher" title="تغيير اللغة / Change Language">
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button id="close-chat" class="close-button">×</button>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="chat-messages" class="chat-messages">
+                <div id="welcome-message" class="welcome-message">
+                    <p>مرحباً! كيف يمكنني مساعدتك اليوم؟</p>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <input type="text" id="message-input" placeholder="اكتب رسالتك هنا..." />
+                <button id="send-button" class="send-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="widget.js"></script>
+</body>
+</html>
